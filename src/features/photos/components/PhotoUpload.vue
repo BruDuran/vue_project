@@ -2,7 +2,7 @@
   <div class="photo-upload">
     <input type="file" accept="image/*" @change="handleFileSelect" ref="fileInput" class="hidden" />
     <button
-      @click="$refs.fileInput.click()"
+      @click="fileInput?.click()"
       class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
     >
       Subir Foto
