@@ -2,7 +2,7 @@
   <div class="video-upload">
     <input type="file" accept="video/*" @change="handleFileSelect" ref="fileInput" class="hidden" />
     <button
-      @click="$refs.fileInput.click()"
+      @click="fileInput?.click()"
       class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
     >
       Subir Video
